@@ -6,9 +6,8 @@ class Go
     return fibonacci
   end
 
-  def add_the_next_number_to the_list
-    n = the_list.size
-    the_list << (the_list[n-1]+the_list[n-2])
+  def add_the_next_number_to list
+    list << (list[-1] + list[-2])
   end
   
 end
