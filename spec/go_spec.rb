@@ -3,8 +3,20 @@ require './go.rb'
 describe Go do
   it "thinks the first fibonacci number is 1" do
     go = Go.new
-    test_array = go.fibo
-    test_array[0].should == 1
-    
+    fibonacci = go.fibo
+    fibonacci[0].should == 1
   end
+
+  it "thinks the second fibonacci number is 2" do
+    go = Go.new
+    fibonacci = go.fibo
+    fibonacci[1].should == 2
+  end
+
+  it "gives 3 for the third fibonacci number" do
+    go = Go.new
+    fibonacci = go.fibo
+    fibonacci[2].should == 3
+  end
+
 end
