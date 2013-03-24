@@ -3,7 +3,7 @@ class Go
   def fibonacci_sequence
     n = 2
     some_array = [1,2]
-    while some_array[n-1] <= 4000000 
+    while some_array.last <= 4000000 
       add_the_previous_two_to some_array, n
       n+=1
     end
