@@ -2,10 +2,8 @@ class Go
 
   def fibonacci_sequence
     fibonacci = [1,2]
-    while fibonacci.last <= 4000000 
-      add_the_next_number_to fibonacci
-    end
-    fibonacci
+    add_the_next_number_to fibonacci while fibonacci.last <= 4e6
+    return fibonacci
   end
 
   def add_the_next_number_to the_list
