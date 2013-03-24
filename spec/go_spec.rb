@@ -19,4 +19,10 @@ describe Go do
     fibonacci[2].should == 3
   end
 
+  it "gives 5 for the fourth fibonacci number" do
+    go = Go.new
+    fibonacci = go.fibo
+    fibonacci[3].should == 5
+  end
+
 end
