@@ -1,14 +1,14 @@
 class Go
 
   def fibonacci_sequence
-    some_array = [1,2]
-    while some_array.last <= 4000000 
-      add_the_previous_two_to some_array
+    fibonacci = [1,2]
+    while fibonacci.last <= 4000000 
+      add_the_next_number_to fibonacci
     end
-    some_array
+    fibonacci
   end
 
-  def add_the_previous_two_to the_list
+  def add_the_next_number_to the_list
     n = the_list.size
     the_list << (the_list[n-1]+the_list[n-2])
   end
