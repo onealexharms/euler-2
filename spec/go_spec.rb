@@ -12,9 +12,13 @@ describe Go do
   it "gives 3 for the third fibonacci number" do
     subject.fibonacci_sequence[2].should == 3
   end
-
+  
   it "gives 5 for the fourth fibonacci number" do
     subject.fibonacci_sequence[3].should == 5
+  end
+
+  it "picks out even fibs" do
+    subject.fibonacci_evens[0..2].should == [2, 8, 34]
   end
 
 end

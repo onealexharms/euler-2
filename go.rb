@@ -6,8 +6,11 @@ class Go
     return fibonacci
   end
 
+  def fibonacci_evens
+    fibonacci_sequence.reject{|n| n % 2 > 0 }
+  end
+
   def add_the_next_number_to list
     list << (list[-1] + list[-2])
   end
-  
 end
