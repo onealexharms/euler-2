@@ -21,4 +21,8 @@ describe Go do
     subject.fibonacci_evens[0..2].should == [2, 8, 34]
   end
 
+  it "sums the evens" do
+    puts subject.fibonacci_evens.inject(0){|sum, n| sum + n} 
+  end
+
 end
