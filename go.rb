@@ -7,7 +7,7 @@ class Go
   end
 
   def fibonacci_evens
-    fibonacci_sequence.reject{|n| n.odd?}
+    fibonacci_sequence.reject &:odd?
   end
   
   def add_the_next_number_to list
